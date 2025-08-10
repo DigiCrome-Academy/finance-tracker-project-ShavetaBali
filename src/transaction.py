@@ -1,8 +1,7 @@
 from datetime import datetime
 import uuid
 
-# The class is now a standard Python class, not a dataclass,
-# to allow for the manual implementation of dunder methods.
+# The class is now a standard Python class
 class Transaction:
     """
     Represents a single financial transaction.
@@ -23,7 +22,6 @@ class Transaction:
         The constructor for the Transaction class. It performs validation
         and initializes the attributes.
         """
-        # Generate a unique transaction ID.
         self.transaction_id = str(uuid.uuid4())
 
         # Validate that the amount is a positive number.
